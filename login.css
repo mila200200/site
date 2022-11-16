@@ -1,0 +1,91 @@
+div.sign-in{
+    text-align: center;
+    justify-self: center;
+    background-color: powderblue;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    min-height: 450px;
+    vertical-align: middle;
+}
+
+div.sign-in img{
+    position: absolute;
+    width: 30%;
+    height: auto;
+    top: 50%;
+    bottom: 50%;
+    right: 0;
+    transform: translate(-25%, -60%);
+    z-index: 0;
+}
+
+form{
+    width: 80%;
+    margin: auto;
+}
+
+div.sign-in h2{
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+div.sign-in p{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+div.form-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.form-info input{
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 30px;
+    padding: 10px;
+    width: 30%;
+    min-width: 200px;
+    max-width: 300px;
+    border-radius: 20px;
+    border: 1.5px  solid black;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+}
+
+div.form-info button{
+    margin-bottom: 10px;
+    height: 40px;
+    width: 20%;
+    min-width: 70px;
+    max-width: 200px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+div.sign-up-alt {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+div.sign-up-alt a:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 576px) {
+    div.sign-in img{
+        display: none;
+    }
+}
+
+
+
+
+

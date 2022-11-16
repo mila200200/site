@@ -1,0 +1,95 @@
+
+div.account-settings{
+    text-align: center;
+}
+
+div.account-settings h2{
+    font-size: 25px;
+    margin: 0;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+div.account-settings h2 img{
+    height: 50px;
+    vertical-align: middle;
+}
+
+hr{
+    border-top: 3px solid grey;
+}
+
+div.account-settings div.info-box{
+    margin: 40px;
+}
+
+div.account-settings div.info-box label{
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+div.account-settings div.info-box input{
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: 2px solid orangered;
+    border-radius: 20px;
+    padding: 5px 10px;
+    height: 45px;
+    box-sizing: border-box;
+}
+
+div.account-settings button{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: 3px solid black;
+    background: grey;
+    border-radius: 20px;
+    padding: 5px 10px;
+    height: 45px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+div.account-settings button:hover{
+    background: none;
+}
+
+@media screen and (max-width:360px) {
+    
+    div.account-settings h2{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    div.account-settings div.info-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.account-settings div.info-box label{
+        font-size: 18px;
+        letter-spacing: 0.5px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    div.account-settings div.info-box input{
+        font-size: 15px;
+        height: 35px;
+        width: 140px;
+    }
+    
+    div.account-settings button{
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        border: 2px solid black;
+        height: 50px;
+    }
+
+}

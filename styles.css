@@ -1,0 +1,622 @@
+body{
+    margin: 0;
+    padding-top: 80px; /*fixed eleements are not taking space in html flow*/
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1180px;
+    max-width: 90%;
+    margin: auto;
+    padding: 0 16px;
+}
+
+header{
+    background-color: #FFF;
+    height: 80px;
+    box-shadow: 0 2px 0 6px rgba(75, 74, 74, 0.062);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    
+}
+
+
+header .logo {
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.37px;
+    vertical-align: middle;
+}
+
+header nav {
+    display: inline-block;
+}
+
+
+header nav ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header nav ul li a {
+    color: #3e3e3e;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.37px;
+    margin-right: 24px;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: black;
+    font-weight: 700;
+}
+
+header nav ul li:last-of-type a {
+    margin-right: 0px;
+}
+
+header nav ul li.menu-icon {
+    cursor: pointer;
+    display: none;
+}
+
+header nav ul li.menu-icon img {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+div.sub-menu{
+    position: relative;
+    text-align: right;
+}
+.dropdown-menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 0;
+    right: 0;
+    width: 250px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.dropdown-menu a{
+    background-color: grey;
+    color: black;
+    display: block;
+    padding: 15px 15px;
+}
+
+.dropdown-menu a:hover{
+    background-color: rgb(83, 79, 79);
+    color: black;
+    display: block;
+    font-weight: 700;
+}
+
+.dropdown-menu a img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.profile-menu:hover .dropdown-menu{
+    display: flex;
+}
+
+div.ham-menu{
+    position: relative;
+}
+
+div.sub-menu-small-desktops {
+    width: 300px;
+    background-color: grey;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none; /*!!!!!!!!!!!!!*/
+    flex-direction: column;
+    z-index: 3;
+    text-align: center;
+}
+
+div.sub-menu-small-desktops a {
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+div.sub-menu-small-desktops a:hover {
+    background-color: rgb(83, 79, 79);
+    color: black;
+    font-weight: 700;
+}
+
+header nav ul li.menu-icon:hover div.sub-menu-small-desktops{
+    display: flex;
+}
+
+.logo-icon{
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+.film{
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.welcome h2{
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+section.hero{
+    position: relative;
+}
+
+div.hero img {
+    width: 100%;
+    transform: scaleX(-1);
+}
+
+.hero-content .container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+div.hero-content{
+    position: absolute;
+    top: 0;
+    right: 0 ;
+    width: 100%;
+    z-index: 0;
+}
+
+div.hero-content h1{
+    max-width: 495px;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    margin-bottom: 15px;
+}
+
+
+div.hero-content p{
+    max-width: 518px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+div.hero-content button{ 
+    height: 50px;
+    width: 220px;
+    max-width: 100%;
+    border-radius: 90px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    text-align: center;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+}
+
+div.hero-content button:hover{ 
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+section.best-movies{
+    padding-top: 50px;
+}
+
+section.best-movies h2{
+    text-align: center;
+    font-size: 34px;
+    letter-spacing: 0.85px;
+    line-height: 42px;
+    font-weight: 500 ;
+    margin: 0 0 14px 0;
+}
+
+
+section.best-movies hr{
+    border: none;
+    border-top: 5px solid coral;
+    width: 90px;
+}
+
+section.best-movies .movie-slider{
+    margin-top: 70px;
+}
+
+section.best-movies .container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+
+section.best-movies .movie-slider .movie{
+    border: 1px solid #DDD;
+    border-radius: 8px ;
+    text-align: center;
+    width: 13%;
+    max-height: 450px;
+    margin: 0 8px 0 8px;
+    padding: 40px;
+    position: relative;
+}
+
+span.like{
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+span.like img{
+    width: 15%;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+span.like img:hover{
+    transform: scale(1.2);
+}
+
+.movie-picture img{
+    max-height: 200px;
+    width: auto;
+}
+
+section.best-movies .movie-slider .movie .movie-info{
+    margin-top: 50px;
+}
+
+section.best-movies .movie-slider .movie .movie-info .categories{
+    color: rgb(85, 106, 199);
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    font-weight: 450;
+}
+
+section.best-movies .movie-slider .movie .movie-info .movie-title{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    line-height: 25px;    
+    margin-bottom: 6px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+section.best-movies .movie-slider .movie .movie-info button{
+    height: 50px;
+    width: 150px;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: o.4px;
+    line-height: 22px;
+    border: 1px solid black;
+    border-radius: 220px;
+    cursor: pointer;
+}
+
+section.best-movies .movie-slider .movie .movie-info button:hover{
+    color: whitesmoke;
+    background-color: black;
+    
+}
+
+#myDIV{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: aquamarine;
+}
+
+footer .footer-nav{
+    background-color: grey;
+    padding: 60px 0;
+}
+
+
+footer .footer-nav .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-nav ul{
+    list-style: none;
+    text-align: center;
+}
+
+footer .footer-nav ul li a{
+    color: #3a3939e0;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+     line-height: 22px;
+     margin-top: 0;
+     margin-bottom: 10px;
+     text-decoration: none;
+     display: block; 
+     font-weight: 550;
+ }
+
+ footer .footer-nav ul li a:hover{
+    color: black;
+ }
+
+footer .footer-nav ul li.list-title{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    line-height: 22px; 
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.social-media-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 0.4;
+}
+
+.social-media-icon:hover {
+    opacity: 1;
+}
+
+footer .copyright{
+    background-color: #2B2B2B;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    line-height: 22px;
+}
+
+/*design for desktop*/
+@media  screen and (max-width: 1440px) {
+    .container{
+        width: 1180px;
+    }
+
+    header{
+        height: 70px;
+    }
+
+    body{
+        padding-top: 70px; /*fixed eleements are not taking space in html flow*/
+    }
+
+    
+section.best-movies .container{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+section.best-movies .movie-slider .movie{
+    min-width: 180px;
+    margin: 18px 8px;
+}
+
+
+
+    
+
+
+
+
+}
+/*end of design for desktop*/
+/*design for tablets*/
+@media  screen and (max-width: 960px) {
+    .container{
+        max-width: 92%;
+    }    
+
+    header nav ul li{
+        display: none;
+    }
+
+    header nav ul li.menu-icon {
+       display: block;
+    }
+
+
+div.hero-content p{
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    width: 60%;
+}
+
+div.hero-content button{ 
+    width: 196px;
+}
+
+section.best-movies .movie-slider .movie{
+    width: 220px;
+    max-width: 80%;
+    margin: 0 8px 10px 8px;
+}
+
+span.like img{
+    
+    top: 15px;
+    right: 15px;
+}
+
+.movie-picture img{
+    max-height: 200px;
+    width: auto;
+}
+
+section.best-movies .movie-slider .movie .movie-info{
+    margin-top: 30px;
+}
+
+section.best-movies .movie-slider .movie .movie-info .categories{
+    font-size: 17px;
+}
+
+section.best-movies .movie-slider .movie .movie-info .movie-title{
+    font-size: 20px;
+    line-height: 22px;   
+}
+
+section.best-movies .movie-slider .movie .movie-info button{
+    font-size: 13px;
+}
+
+
+
+}
+/*end of design for tablets*/
+/*design for mobiles*/
+@media  screen and (max-width: 576px) {
+   
+ 
+div.sub-menu-small-desktops {
+    width: 150px;
+}
+  
+div.sub-menu-small-desktops a {
+    display: block;
+    padding: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+div.sub-menu-small-desktops a img{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+    
+div.hero-content{
+    position: static;
+}
+
+div.hero-content h1{
+    color: black;
+    text-align: center;
+}
+
+
+div.hero-content p{
+    color: rgb(51, 50, 50);
+    font-size: 15px;
+    text-transform: inherit;
+    margin: auto;
+    align-items: center;
+}
+
+div.hero-content button{ 
+    color: rgb(255, 255, 255);
+    background-color: black;
+    margin: auto;
+}
+
+div.hero-content button:hover{ 
+    transform: scale(1.05);
+}
+
+.movie-picture img{
+    max-height: 300px;
+    width: auto;
+}
+
+section.best-movies .movie-slider .movie .movie-info{
+    margin-top: 30px;
+}
+
+section.best-movies .movie-slider .movie .movie-info button{
+    height: 50px;
+    width: 150px;
+    font-weight: 700;
+    line-height: 15px;
+    border: 0.5px solid rgba(0, 0, 0, 0.616);
+    
+}
+
+footer .footer-nav .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-nav ul{
+    margin-bottom: 32px;
+}
+
+footer .footer-nav ul:last-of-type{
+margin-bottom: 0%;
+}
+
+}
+/*end of design for mobiles*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

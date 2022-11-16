@@ -1,0 +1,570 @@
+body{
+    margin: 0;
+    padding-top: 80px; /*fixed eleements are not taking space in html flow*/
+}
+
+.container{
+    width: 1180px;
+    max-width: 90%;
+    margin: auto;
+    padding: 0 16px;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+div.about-us {
+    display: flex;
+    flex-direction: row;
+}
+
+div.about-us h1 {
+    text-align: center;
+}
+
+div.about-us p {
+    margin: 10px;
+    padding: 0;
+    font-size: 15;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+div.about-us img {
+    width: 50%;
+    max-width: 600px;
+    height: 50%;
+    max-height: 600px;
+    margin: auto 0;
+}
+
+div.our-team h1{
+    text-align: center;
+}
+
+hr{
+    border: none;
+    border-top: 5px solid rgb(15, 15, 15);
+    width: 100px;
+}
+
+div.team-member{
+    display: flex;
+    display: none;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+div.team-member:first-of-type{
+    display: flex;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  div.slide-show{
+      position: relative;
+  }
+
+div.slide-show a.button img{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    height: 30px;
+
+}
+
+div.slide-show a.button img.previous{
+    left: 20px;
+    z-index: 3;
+}
+
+div.slide-show a.button img.next{
+    right: 20px;
+    z-index: 3;
+}
+
+div.image img{
+    padding: 15px;
+    height: 300px;
+    
+}
+
+div.member-info h3{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin: 20px auto;
+}
+
+div.member-info p{
+    display: block;
+    margin: 15px;
+    max-height: 200px;
+    overflow-y: scroll;
+    font-size: 20px;
+    line-height: 25px;
+    resize: none;
+}
+
+div.contact-us{
+    margin-bottom: 50px;
+}
+
+div.contact-us h1{
+    text-align: center;
+}
+
+div.contact-content {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 15px;
+    background-color: cadetblue;
+}
+
+div.contact-content .message p{
+    text-align: center;
+    font-size: 25px;
+}
+
+div.contact-content .message img{
+    width: 40px;
+    margin: 0 10px;
+    vertical-align: bottom;
+}
+
+div.contact-content .email-box {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.email-form{
+    width: 50%;
+    margin: 20px;
+}
+
+.email-form input{
+    display: block;
+    height: 30px;
+    width: 100%;
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid rgb(82, 124, 126);
+    font-size: 20px;
+}
+
+.email-form textarea {
+    border-radius: 15px;
+    padding: 10px;
+    border: 2px solid rgb(82, 124, 126);
+    font-size: 20px;
+    width: 100%;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.email-form button{
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    background-color: white;
+    margin: auto;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.email-form button:hover{
+    background-color: rgba(0, 0, 0, 0.466);
+    color: white;
+}
+
+.email-form img{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.email-info{
+    width: 50%;
+    margin: 20px;
+}
+
+.email-info ul{
+    list-style: none;
+    text-align: center;
+}
+
+.email-info img{
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.email-info ul li{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.email-info ul li:last-of-type{
+    margin-bottom: 0;
+}
+
+div.FAQ {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 15px;
+    background-color: cornsilk;
+    margin-bottom: 50px;
+}
+
+div.FAQ h1{
+    text-align: center;
+}
+
+div.FAQ h1 img{
+    vertical-align: middle;
+    height: 50px;
+    width: auto;
+}
+
+div.FAQ .FAQ-box{
+    border-bottom: 1px solid black;
+}
+
+div.FAQ .FAQ-box:last-of-type{
+    border-bottom: none;
+}
+
+div.FAQ .FAQ-box .question{
+    position: relative;
+    margin: 10px 10px 0 10px;
+    padding-right: 70px;
+}
+
+div.FAQ .FAQ-box .question:last-of-type { 
+    border-bottom: 0;
+}
+
+div.FAQ .FAQ-box .question img{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+summary::marker{
+    color: cornsilk;;
+}
+
+.arrow-up img{
+    position: absolute;
+    top: 0;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transform: scaleY(-1);    
+}
+
+div.FAQ .FAQ-box .answer{
+    display: block;
+    margin: 10px;
+}
+
+/*MEDIA*/
+
+ /*design for desktop*/
+@media  screen and (max-width: 1440px) {
+   /*everything works*/
+}
+/*end of design for desktop*/
+/*design for tablets*/
+@media  screen and (max-width: 960px) {
+  
+    div.about-us {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(95, 158, 160, 0.432);
+        border-radius: 20px;
+    }
+    
+    div.about-us p {
+        height: 250px;
+        overflow-y: scroll;
+    }
+    div.about-us img {
+        margin: auto;
+        width: 80%;
+        height: auto;
+        align-self: center;
+        margin-bottom: 15px;
+    }
+    
+    
+    div.image img{
+        height: 250px;
+    }
+    
+    div.member-info h3{
+        font-size: 30px;
+    }
+    
+    div.member-info p{
+        max-height: 170px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    div.contact-content .message p{
+        font-size: 20px;
+    }
+    
+    div.contact-content .message img{
+        width: 35px;
+        margin: 0 5px;
+    }
+
+    .email-form input{
+        height: 25px;
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    .email-form textarea {
+        font-size: 15px;
+        overflow-y:scroll ;
+    }
+
+    .email-form button{
+        font-size: 15px;
+        font-weight: 700;
+    }
+    
+    .email-form img{
+        top: 7px;
+        right: 7px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .email-info img{
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    
+    .email-info:last-of-type img{
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .email-info ul li:first-of-type{
+        margin-top: 20px;
+    }
+
+    .email-info ul li{
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+    
+    .email-info ul li:last-of-type{
+        margin-bottom: 0px;
+    }
+
+
+}
+/*end of design for tablets*/
+/*design for mobiles*/
+@media  screen and (max-width: 576px) {
+
+    
+    div.about-us h1 {
+        font-size: 25px;
+    }
+
+hr{
+    border: none;
+    border-top: 2px solid rgb(15, 15, 15);
+    width: 75px;
+}
+
+
+
+div.team-member{
+    display: none;
+    flex-direction: column;
+}
+
+div.slide-show a.button img{
+    top: 30%;
+    height: 20px;
+
+}
+
+
+div.image img{
+    display: flex;
+    height: 150px;
+    margin: 0 auto;
+}
+
+div.member-info h3{
+    font-size: 30px;
+    margin: 0px auto;
+}
+
+div.member-info p{
+    display: block;
+    margin: 10px 20px;
+    max-height: 180px;
+}
+
+div.contact-content .message p{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+}
+
+div.contact-content .message img{
+    width: 30px;
+    margin: 0 5px;
+}
+
+div.contact-content .email-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-form{
+    width: 70%;
+    align-items: center;
+    margin: 10px 10px 0 10px;
+}
+
+.email-form input{
+    height: 25px;
+    font-size: 15px;
+    width: 85%;
+}
+
+.email-form textarea {
+    max-width: 85%;
+}
+
+.email-form button{
+    height: 40px;
+    font-size: 15px;
+}
+
+.email-form img{
+    display: none;
+}
+
+.email-info{
+    width: 100%;
+    margin: 0 10px 10px 10px;
+}
+
+.email-info img{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.email-info ul li{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.email-info ul li:last-of-type{
+    margin-bottom: 0;
+}
+
+div.FAQ {
+    margin: 10px;
+    background-color: cornsilk;
+    margin-bottom: 30px;
+}
+
+div.FAQ h1{
+    font-size: 16px;
+}
+
+div.FAQ h1 img{
+    vertical-align: middle;
+    height: 30px;
+    width: auto;
+}
+
+div.FAQ .FAQ-box .question{
+    position: relative;
+    margin: 10px 10px 0 10px;
+    padding-right: 20px;
+    font-size: 13px;
+}
+
+div.FAQ .FAQ-box .question img{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+div.FAQ .FAQ-box .answer{
+    margin: 10px;
+    font-size: 13px;
+}
+
+}
+/*end of design for mobiles*/
+   
+
+
+
+
+
+
+
+
+
+
+
